@@ -1,0 +1,37 @@
+{
+  "name": "dbv",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/electron-main.js",
+  "dependencies": {
+    "bluebird": "3.5.0",
+    "brace": "0.10.0",
+    "mysql": "2.14.1",
+    "react": "16.0.0-rc.3",
+    "react-ace": "5.2.0",
+    "react-dom": "16.0.0-rc.3",
+    "react-scripts": "1.0.13"
+  },
+  "scripts": {
+    "dev": "nf start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron -r babel-register ."
+  },
+  "devDependencies": {
+    "babel-preset-env": "1.6.0",
+    "babel-register": "6.26.0",
+    "electron": "1.7.6",
+    "foreman": "2.0.0",
+    "prettier": "1.7.0"
+  },
+  "prettier": {
+    "printWidth": 110,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "semi": false
+  }
+}
