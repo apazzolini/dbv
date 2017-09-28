@@ -3,6 +3,7 @@ import AceEditor from 'react-ace'
 import brace from 'brace'
 import 'brace/mode/sql'
 import 'brace/theme/solarized_light'
+import 'brace/theme/tomorrow_night'
 import 'brace/keybinding/vim'
 
 // import main from '../../electron-main.js'
@@ -73,6 +74,14 @@ const onAceLoad = onResult => editor => {
         toKeys: '10k',
         type: 'keyToKey',
         user: true,
+    })
+
+    editor.getKeyboardHandler().defaultKeymap.unshift({
+        keys: 'jk',
+        action: 'exitInsertMode',
+        type: 'action',
+        user: true,
+        context: 'insert',
     })
 }
 
